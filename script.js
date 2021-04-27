@@ -29,5 +29,41 @@ function addBookToLibrary(title, author, pages, isRead){
     myLibrary.push(newBook);
 }
 
+function showBooks(){
+    const bookList = document.getElementById('book-list');
+    bookList.textContent = '';
+    myLibrary.map(book => {
+        const bookRow = document.createElement('tr');
+        bookRow.classList.add('book-list-item');
+        bookList.appendChild(bookRow)
+        //BOOK NAME
+        const bookName = document.createElement('td');
+        bookName.textContent = book.title;
+        bookRow.appendChild(bookName);
+        //BOOK AUTHOR
+        const bookAuthor = document.createElement('td');
+        bookAuthor.textContent = book.author;
+        bookRow.appendChild(bookAuthor);
+        //BOOK PAGES
+        const bookPages = document.createElement('td');
+        bookPages.textContent = book.pages;
+        bookRow.appendChild(bookPages);
+        //BOOK READ
+        const bookRead = document.createElement('td');
+        let bookStatus = book.isRead ? (`<input type="checkbox" checked></input>`) : (`<input type="checkbox"></input>`)
+        bookRead.innerHTML = bookStatus;
+        bookRow.appendChild(bookRead);
+        //BOOK TRASH
+        const bookTrash = document.createElement('td');
+        bookTrash.innerHTML = (`<i class="bsc-trash-delete-bin"></i>`);
+        bookRow.appendChild(bookTrash);
+    })
+}
+
 addBookToLibrary("mybook", 'Tansel', 400, true);
 console.log(myLibrary[2].title);
+
+showBooks();
+
+console.log(bookName);
+

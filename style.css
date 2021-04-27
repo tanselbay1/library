@@ -1,0 +1,110 @@
+body {
+   display: flex;
+   margin: 0;
+   flex-direction: column;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+   font-family: 'Orelega One', cursive;
+   font-size: 48px;
+   text-align: center;
+   margin: 0;
+}
+
+h5 {
+   display: flex;
+   font-family: 'Original Surfer', cursive;
+   justify-content: center;
+   margin: 0;
+}
+
+table {
+   border-collapse: unset;
+   border-spacing: 0;
+}
+
+.container {
+   height: 100vh;
+   display: flex;
+}
+
+#table-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 100px auto;
+   padding: 20px;
+}
+
+#title {
+   margin: 50px 15px;
+   position: relative;
+}
+
+#form {
+   background-color: #ca8a8b;
+   flex-grow: 1;
+}
+
+#page {
+   background-color: #e2bcb7;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex-grow: 3;
+}
+
+#check-box {
+   margin: 20px 0;
+}
+
+.book-form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.button {
+   background-color: rgba(255, 255, 255, 0.4);
+   border-radius: 10px;
+   cursor: pointer;
+   font-size: 20px;
+   margin: 20px 0;
+   width: 150px;
+   height: 60px;
+}
+
+.text-box {
+   background-color: rgba(255, 255, 255, 0.4);
+   border-top: none;
+   border-right: none ;
+   border-top-right-radius: 10px;
+   padding: 10px;
+   margin: 20px;
+   width: 80%;
+}
+
+#book-headers {
+   background-color: #ca8a8b;
+}
+
+#book-headers th {
+   font-family: 'Orelega One', cursive;
+   font-size: 25px;
+   margin: 10px;
+   padding: 25px;
+}
+
+.book-list-item td {
+   border-bottom: 5px double #ca8a8b;
+   font-size: 20px;
+   padding:  20px 25px;
+   text-align: center;
+}
+
+.bsc-trash-delete-bin:hover {
+   cursor: grab;
+   opacity: 0.6;
+   transition: all ease 0.3s;
+}

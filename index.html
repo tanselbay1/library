@@ -4,13 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Library</title>
 </head>
 <body>
+    <div class="container">
+        <div id="form">
+            <div id="title">
+                <h1>MY LIBRARY</h1>
+                <h5>By Tansel</h5>
+            </div>
+            <form action="" method="GET" class="book-form">
+                <input class="text-box" name="bookName" type="text" placeholder="What is the name of the book?" required>
+                <input class="text-box" name="bookAuthor" type="text" placeholder="Who is the author of the book?" required>
+                <input class="text-box" name="bookPages" type="number" placeholder="How many pages in the book?" min="1" max="1500" required>
+                <div id="check-box">
+                    <input type="checkbox" name="checkbox">
+                    <label for="checkbox">I have already read the book</label>
+                </div>
+                <button type="submit" class="button">New Book</button>
+            </form>
+        </div>
+        <div id="page">
+            <div id="table-container">
+                <table>
+                    <thead id="book-headers">
+                        <tr>
+                            <th>NAME</th>
+                            <th>AUTHOR</th>
+                            <th>PAGES</th>
+                            <th>READ</th>
+                            <th>REMOVE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="book-list">
+                        <!-- <tr class="book-list-item">
+                            <td>book1book1 book1</td>
+                            <td>author1 author1</td>
+                            <td>123</td>
+                            <td>ok</td>
+                            <td>X</td>
+                        </tr>                           -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
     
 
-
+    <script async src="https://basicons.xyz/embed.js"> </script>
     <script src="script.js"></script>
 </body>
 </html>
