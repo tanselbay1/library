@@ -14,17 +14,21 @@
         <div id="form">
             <div id="title">
                 <h1>MY LIBRARY</h1>
-                <h5>By Tansel</h5>
+                <h5><a href="https://github.com/tanselbay1" target="_blank">By Tansel</a></h5>
             </div>
-            <form action="" method="GET" class="book-form">
-                <input class="text-box" name="bookName" type="text" placeholder="What is the name of the book?" required>
-                <input class="text-box" name="bookAuthor" type="text" placeholder="Who is the author of the book?" required>
-                <input class="text-box" name="bookPages" type="number" placeholder="How many pages in the book?" min="1" max="1500" required>
-                <div id="check-box">
-                    <input type="checkbox" name="checkbox">
+            <form action="" method="GET" id="book-form">
+                <input class="text-box" id="bookName" name="bookName" type="text" placeholder="What is the name of the book?" required>
+                <input class="text-box" id="bookAuthor" name="bookAuthor" type="text" placeholder="Who is the author of the book?" required>
+                <input class="text-box" id="bookPages" name="bookPages" type="number" placeholder="How many pages in the book?" min="1" max="1500" required>
+                <!-- <div id="check-box">
+                    <input type="checkbox" id="checkbox" name="checkbox">
                     <label for="checkbox">I have already read the book</label>
-                </div>
-                <button type="submit" class="button">New Book</button>
+                </div> -->
+                <label class="checkbox">
+                    <input type="checkbox" class="check-box"/>
+                    <span>I have already read the book</span>
+                </label>
+                <button type="submit" class="button" id="add-button">New Book</button>
             </form>
         </div>
         <div id="page">
@@ -40,19 +44,19 @@
                         </tr>
                     </thead>
                     <tbody id="book-list">
+                        <!-- Example Row Of Table -->
                         <!-- <tr class="book-list-item">
                             <td>book1book1 book1</td>
                             <td>author1 author1</td>
                             <td>123</td>
-                            <td>ok</td>
-                            <td>X</td>
+                            <td>readOrNot</td>
+                            <td>removeItem</td>
                         </tr>                           -->
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-    
 
     <script async src="https://basicons.xyz/embed.js"> </script>
     <script src="script.js"></script>
