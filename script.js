@@ -20,12 +20,12 @@ let myLibrary = [
 ];
 
 //USING LOCAL STORAGE TO BRING BOOKS
-if(JSON.parse(localStorage.getItem('books')).length === 0){
-    //If localstorage is empty mylibrary dummy will work
-}else if(localStorage.getItem('books')){
-    const localBooks = JSON.parse(localStorage.getItem('books'));
-    myLibrary = localBooks;
-}
+// if(JSON.parse(localStorage.getItem('books')).length === 0){
+//     //If localstorage is empty mylibrary dummy will work
+// }else if(localStorage.getItem('books')){
+//     const localBooks = JSON.parse(localStorage.getItem('books'));
+//     myLibrary = localBooks;
+// }
 
 
 
@@ -50,7 +50,7 @@ function addBookToLibrary(title, author, pages, isRead){
 }
 
 function showBooks(){
-    localStorage.setItem('books', JSON.stringify(myLibrary));
+    // localStorage.setItem('books', JSON.stringify(myLibrary));
     const bookList = document.getElementById('book-list');
     bookList.textContent = '';
     myLibrary.map(book => {
